@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF6CE3B8-533E-43D6-9E0C-A0986624316A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F1A1CAB9-210D-451D-95D9-F3193EA9B5AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuku.Sales.Fixture", "tests\Dokuku.Sales.Fixture\Dokuku.Sales.Fixture.csproj", "{92B17575-B137-4D55-B0FB-C4A3F2A9AE04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuku.Sales", "src\Dokuku.Sales\Dokuku.Sales.csproj", "{D3503386-578E-499E-B08B-DDA016EE7982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuku.Sales.Commands", "src\Dokuku.Sales.Commands\Dokuku.Sales.Commands.csproj", "{8E42E122-A518-4502-B3C8-A6783DE669F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuku.Sales.Events", "src\Dokuku.Sales.Events\Dokuku.Sales.Events.csproj", "{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuku.Sales.Denormalizers", "src\Dokuku.Sales.Denormalizers\Dokuku.Sales.Denormalizers.csproj", "{D315A2E9-B15A-4959-9ED4-EAB5911A213F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B17575-B137-4D55-B0FB-C4A3F2A9AE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B17575-B137-4D55-B0FB-C4A3F2A9AE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B17575-B137-4D55-B0FB-C4A3F2A9AE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B17575-B137-4D55-B0FB-C4A3F2A9AE04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3503386-578E-499E-B08B-DDA016EE7982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3503386-578E-499E-B08B-DDA016EE7982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3503386-578E-499E-B08B-DDA016EE7982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3503386-578E-499E-B08B-DDA016EE7982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E42E122-A518-4502-B3C8-A6783DE669F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E42E122-A518-4502-B3C8-A6783DE669F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E42E122-A518-4502-B3C8-A6783DE669F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E42E122-A518-4502-B3C8-A6783DE669F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D315A2E9-B15A-4959-9ED4-EAB5911A213F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D315A2E9-B15A-4959-9ED4-EAB5911A213F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D315A2E9-B15A-4959-9ED4-EAB5911A213F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D315A2E9-B15A-4959-9ED4-EAB5911A213F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3503386-578E-499E-B08B-DDA016EE7982} = {CF6CE3B8-533E-43D6-9E0C-A0986624316A}
+		{8E42E122-A518-4502-B3C8-A6783DE669F9} = {CF6CE3B8-533E-43D6-9E0C-A0986624316A}
+		{C3010FB7-4DF1-4DA3-B500-C53F44A269D0} = {CF6CE3B8-533E-43D6-9E0C-A0986624316A}
+		{D315A2E9-B15A-4959-9ED4-EAB5911A213F} = {CF6CE3B8-533E-43D6-9E0C-A0986624316A}
+		{92B17575-B137-4D55-B0FB-C4A3F2A9AE04} = {F1A1CAB9-210D-451D-95D9-F3193EA9B5AC}
+	EndGlobalSection
+EndGlobal

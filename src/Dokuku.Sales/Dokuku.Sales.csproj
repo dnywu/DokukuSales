@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3503386-578E-499E-B08B-DDA016EE7982}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dokuku.Sales</RootNamespace>
+    <AssemblyName>Dokuku.Sales</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ncqrs">
+      <HintPath>..\..\packages\Ncqrs.1.0.0\lib\Ncqrs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aggregates\Invoice.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\InvoiceItem.cs" />
+    <Compile Include="Exceptions\CustomerNotFoundException.cs" />
+    <Compile Include="Helper\ObjectExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Services\ChangeInvoiceDateService.cs" />
+    <Compile Include="Services\CreateInvoiceService.cs" />
+    <Compile Include="ValueObjects\Currency.cs" />
+    <Compile Include="ValueObjects\Status.cs" />
+    <Compile Include="ValueObjects\Term.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dokuku.Sales.Commands\Dokuku.Sales.Commands.csproj">
+      <Project>{8e42e122-a518-4502-b3c8-a6783de669f9}</Project>
+      <Name>Dokuku.Sales.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dokuku.Sales.Events\Dokuku.Sales.Events.csproj">
+      <Project>{C3010FB7-4DF1-4DA3-B500-C53F44A269D0}</Project>
+      <Name>Dokuku.Sales.Events</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
